@@ -1,0 +1,43 @@
+.toggle {
+	text-align: center;
+	color: #F5F5F5;
+	filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.12));
+}
+
+.toggle .toggle-button:first-child {
+	border-radius: 8px 0px 0px 8px;
+}
+
+.toggle .toggle-button:last-child {
+	border-radius: 0px 8px 8px 0px;
+}
+
+.toggle-button {
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 28px;
+	padding: 12px 32px;
+	display: inline-block;
+	filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.12));
+	border: none;
+}
+
+.toggle-unchecked {
+	opacity: 0.5;
+	font-weight: 400;
+	background-color: #2D3B41;
+}
+
+.toggle-checked {
+	opacity: 1;
+	font-weight: 400;
+	background-color: #5173F5;
+}
+
+.toggle-button:hover {
+	cursor: pointer;
+	font-weight: 400;
+	background-color: #5173F5;
+}

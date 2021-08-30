@@ -1,0 +1,16 @@
+.Home-body {
+	margin-top: 50px;
+	padding: 0% 11%;
+}
+
+.Home-bodyBot {
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.Home-bodyTop {
+	display: flex;
+	justify-content: space-between;
+}

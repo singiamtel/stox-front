@@ -1,0 +1,138 @@
+.buy {
+	display: inline-block;
+	width: 500px;
+}
+
+.buy-title {
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 48px;
+	margin-left: 12px;
+	color: #2D3B41;
+}
+
+.buy-index {
+	display: flex;
+	align-items: space between;
+	margin-right: 12px;
+}
+
+.buy-index .buy-subtitle {
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 24px;
+	margin: 0px 14px;
+	color: #56707C;
+}
+
+.buy-buy .buy-subtitle:first-child {
+	margin-left: 0px;
+	color: #5173F5;
+}
+
+.buy-body {
+	margin-top: 12px;
+	width: 464px;
+}
+
+.buy-bodyInfo {
+	display: flex;
+	margin: 12px 12px;
+	justify-content: space-between;
+	align-items: center;
+	filter: drop-shadow(0px 2px 6px rgba(0,0,0,0.12));
+	border-radius: 15px;
+	padding: 12px;
+	background: #F5F5F5;
+}
+
+.buy-value {
+	width: 40%;
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 28px;
+	text-transform: uppercase;
+	color: #2D3B41;
+}
+
+.buy-volume {
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 16px;
+	text-transform: uppercase;
+	color: #2D3B41;
+}
+
+.buy-change {
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: right;
+}
+
+.buy-bodyForm {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	vertical-align: middle;
+	padding: 0px 12px;
+}
+
+.buy-bodyForm form input:first-child {
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	width: 100px;
+	padding: 12px;
+	border-radius: 8px 0px 0px 8px;
+	border: none;
+	filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.12));
+}
+
+.buy-bodyForm form button {
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 28px;
+	padding: 12px;
+	border-radius: 0px 8px 8px 0px;
+	background-color: #2D3B41;
+	border: none;
+	font-weight: 400;
+	color: #F5F5F5;
+	filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.12));
+}
+
+.buy-bodyForm form button:hover {
+	cursor: pointer;
+	font-weight: 600px;
+	background-color: #5173F5;
+}
+
+.buy-bodyForm form input:focus {
+	outline: none;
+	box-shadow: inset 0px 2px 6px rgba(0,0,0,0.12);
+}
+
+.api-response-buy{
+	width:90%;
+	height:50px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	margin-top:50px;
+	border-radius:50px;
+}

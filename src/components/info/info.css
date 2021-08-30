@@ -1,0 +1,27 @@
+.info {
+	width: 868px;
+}
+
+.info-title {
+	/* Typeface/Headline Three/Regular */
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 48px;
+	
+	/* Dark grey */
+	color: #2D3B41;
+}
+
+.info-text {
+	/* Typeface/Caption Two/Regular */
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	
+	/* Dark grey */
+	color: #2D3B41;
+}

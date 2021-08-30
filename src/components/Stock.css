@@ -1,0 +1,20 @@
+.Stock-body {
+	margin-top: 50px;
+	padding: 0% 11%;
+}
+
+.Stock-bodyBot {
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.Stock-bodyMid {
+	display: flex;
+	justify-content: space-between;
+}
+
+.Stock-bodyTop {
+	display: flex;
+	justify-content: space-between;
+}

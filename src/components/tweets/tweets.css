@@ -1,0 +1,137 @@
+.tweets {
+	display: inline-block;
+}
+.tweets-title {
+		/* Typeface/Headline Three/Regular */
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 48px;
+	margin-left: 12px;
+	
+	/* identical to box height, or 150% */
+	
+	/* Dark grey */
+	color: #2D3B41;
+}
+
+.tweets-index {
+	display: flex;
+	align-items: space between;
+	margin-left: 12px;
+}
+
+.tweets-index .tweets-subtitle {
+	/* Typeface/Caption Two/Light */
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 24px;
+	margin: 0px 14px;
+	
+	/* Medium grey */
+	color: #56707C;
+}
+
+.tweets-index .tweets-subtitle:first-child {
+	/* Typeface/Caption Two/Light */
+	margin-left: 0px;
+	color: #5173F5;
+}
+
+.tweet {
+	width: 463px;
+	display: flex;
+	padding: 12px 0px;
+}
+
+.tweet img {
+	width: 44px;
+	height: 44px;
+	border-radius: 123px;
+	margin: 6px 12px;
+	display: inline-block;
+}
+
+.tweet .tweet-content {
+	display: inline-block;
+	width: 380px;
+}
+
+.tweet-userName {
+	/* Typeface/Caption Two/Semi Bold */
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 24px;
+	
+	/* Dark grey */
+	color: #2D3B41;
+}
+
+.tweet-userTag {
+	/* Typeface/Caption Two/Regular */
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	
+	/* Light Grey */
+	color: #89A2AE;
+}
+
+.tweet-text {
+	/* Typeface/Caption Three/Light */
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 20px;
+	
+	/* or 167% */
+	
+	/* Dark grey */
+	color: #2D3B41;
+}
+
+.tweet-topRight {
+	/* Typeface/Caption Two/Regular */
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	
+	/* or 171% */
+	text-align: right;
+	
+	/* Light Grey */
+	color: #89A2AE;
+}
+
+.tweet-top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.tweets-body {
+	margin-top: 12px;
+	filter: drop-shadow(0px 2px 6px rgba(0,0,0,0.12));
+}
+
+.tweets-body .tweet {
+	background: #F5F5F5;
+	filter: drop-shadow(0px 2px 6px rgba(0,0,0,0.12));
+}
+
+.tweets-body .tweet:first-child {
+	border-radius: 15px 15px 0px 0px;
+}
+
+.tweets-body .tweet:last-child {
+	border-radius: 0px 0px 15px 15px;
+}

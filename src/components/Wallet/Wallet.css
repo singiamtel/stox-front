@@ -1,0 +1,144 @@
+.stocks {
+	display: flex;
+	flex-direction:column;
+}
+
+.aux{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+	margin-top:50px;
+}
+
+.stocks-title {
+		/* Typeface/Headline Three/Regular */
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 48px;
+	margin-left: 12px;
+	
+	/* identical to box height, or 150% */
+	
+	/* Dark grey */
+	color: #2D3B41;
+}
+
+.stocks-index {
+    margin-bottom: 15px;
+
+	display: flex;
+	justify-content: space-between;
+	margin-left: 12px;
+}
+
+.stocks-index .stocks-subtitle {
+	/* Typeface/Caption Two/Light */
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 25px;
+	line-height: 24px;
+	margin-left:16px;
+	margin-right:32px;
+	
+	/* Medium grey */
+	color: #56707C;
+}
+
+.stock {
+	width: 464px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 24px;
+}
+
+.stock-left {
+	width: 40%
+}
+
+.stock-stockSymbol {
+		/* Typeface/Caption One/Semibold/Mayus */
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 28px;
+	
+	/* identical to box height, or 175% */
+	text-transform: uppercase;
+	
+	/* Dark grey */
+	color: #2D3B41;
+}
+
+.stock-stockName {
+	/* Typeface/Caption Three/Light/Mayus */
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 16px;
+	text-transform: uppercase;
+	
+	/* Dark grey */
+	color: #2D3B41;
+}
+
+.stock-middle {
+	/* Typeface/Caption Three/Light/Mayus */
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 16px;
+	text-transform: uppercase;
+	text-align: right;
+	width: 30%;
+	
+	/* Dark grey */
+	color: #2D3B41;
+}
+
+.stock-right {
+	width: 30%;
+}
+
+.stock-stockChange {
+	/* Typeface/Caption Three/Regular */
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 20px;
+	
+	/* identical to box height, or 167% */
+	text-align: right;
+	
+	/* Green up */
+	color: #00C7B7;
+}
+
+.stocks-body {
+	margin-top: 12px;
+	filter: drop-shadow(0px 2px 6px rgba(0,0,0,0.12));
+	border-radius: 0px 0px 0px 0px;
+	margin-bottom:100px;
+}
+
+.stocks-body .stock {
+	background: #F5F5F5;
+	filter: drop-shadow(0px 2px 6px rgba(0,0,0,0.12));
+}
+
+.stocks-body:first-child {
+	border-radius: 15px 15px 0px 0px;
+}
+
+.wallet-layout{
+	display:flex;
+	flex-direction:column;
+}

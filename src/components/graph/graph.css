@@ -1,0 +1,14 @@
+.graph {
+	width: 839px;
+}
+
+.graph-title {
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 48px;
+	margin-bottom: 24px;
+
+	color: #2D3B41;
+}

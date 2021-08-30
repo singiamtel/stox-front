@@ -1,0 +1,34 @@
+.links {
+	text-align: left;
+}
+
+.links .link-row a {
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	color: #89A2AE;
+	text-decoration: none;
+}
+
+.links .link-row:first-child {
+	margin-bottom: 14px;
+}
+
+.links .link-row:first-child a {
+	/* Typeface/Caption Two/Semi Bold */
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 24px;
+	text-decoration: none;
+	
+	/* White canvas */
+	color: #F5F5F5;
+}
+
+.links .link-row a:hover {
+	text-decoration: underline;
+}

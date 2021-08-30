@@ -1,0 +1,105 @@
+
+.stocks-title {
+		/* Typeface/Headline Three/Regular */
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 48px;
+	margin-left: 12px;
+	
+	/* identical to box height, or 150% */
+	
+	/* Dark grey */
+	color: #2D3B41;
+}
+
+.stocks-index {
+	display: flex;
+	margin-left: 12px;
+}
+
+div .stocks-index .stocks-subtitle {
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 24px;
+	color: #56707C;
+}
+
+div .stock {
+	width: 464px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 24px;
+}
+
+.stock-left {
+	width: 40%
+}
+
+.stock-stockSymbol {
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 28px;
+	text-transform: uppercase;
+	color: #2D3B41;
+	text-decoration: none;
+}
+
+.stock-stockName {
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 16px;
+	text-transform: uppercase;
+	color: #2D3B41;
+}
+
+.stock-middle {
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 16px;
+	text-transform: uppercase;
+	text-align: right;
+	width: 30%;
+	
+	/* Dark grey */
+	color: #2D3B41;
+}
+
+.stock-right {
+	width: 30%;
+}
+
+div .stock-stockChange {
+	/* Typeface/Caption Three/Regular */
+	font-family: Noto Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 20px;
+	
+	/* identical to box height, or 167% */
+	text-align: right;
+	
+	/* Green up */
+	color: #00C7B7;
+}
+
+div .stocks-body {
+	margin-top: 12px;
+	filter: drop-shadow(0px 2px 6px rgba(0,0,0,0.12));
+}
+
+div .stocks-body .stock {
+	background: #F5F5F5;
+	filter: drop-shadow(0px 2px 6px rgba(0,0,0,0.12));
+}
