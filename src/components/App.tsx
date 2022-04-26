@@ -49,10 +49,11 @@ const App = () => {
 
 		)
 	}
-	if(!token || !token?.token) {
-		history.replace("/login");
-		return <Login setToken={setToken}/>
-	}
+	// Compulsory login disabled for demo
+	// if(!token || !token?.token) {
+	// 	history.replace("/login");
+	// 	return <Login setToken={setToken}/>
+	// }
 	return (
 		<div className="App">
 			<Bar />

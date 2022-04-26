@@ -156,9 +156,6 @@ const Bar = () => {
 							<NavLink className={`nav-item ${path === "/" ? "nav-current" : ""}`} to="/" >Inicio</NavLink>
 						</div>
 						<div className="nav-links-el">
-							<NavLink className={`nav-item ${path === "/market" ? "nav-current" : ""}`} to="/market" >Mercados</NavLink>
-						</div>
-						<div className="nav-links-el">
 							<NavLink className={`nav-item ${path === "/news" ? "nav-current" : ""}`} to="/news" >Noticias</NavLink>
 						</div>
 						<div className="nav-links-el">
