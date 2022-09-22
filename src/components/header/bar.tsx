@@ -136,7 +136,7 @@ const Bar = () => {
 
       <div className="black-bar">
         <div className="featured-stocks">
-          <div className="tendencias-text">Tendencias</div>
+          <div className="tendencias-text">Trends</div>
           {fetchedStocks.map((el: StockInfo, index: number) => {
             return <BarItem key={index} {...el} />;
           })}
