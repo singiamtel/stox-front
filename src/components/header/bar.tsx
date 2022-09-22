@@ -9,7 +9,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 interface StockInfo {
   stockSymbol: string;
-  stockName: string;
   price: string;
   changePer: string;
   changeVol: string;
@@ -23,13 +22,7 @@ const usePathname = () => {
   return location.pathname;
 };
 
-const BarItem = ({
-  stockSymbol,
-  stockName,
-  price,
-  changePer,
-  changeVol,
-}: StockInfo) => {
+const BarItem = ({ stockSymbol, price, changePer, changeVol }: StockInfo) => {
   const inc = parseFloat(changeVol) > 0;
   return (
     <div className="featured-item">
@@ -121,7 +114,6 @@ const Bar = () => {
       const diff = data.hDailies[0].close - data.hDailies[1].close;
       stocks.push({
         stockSymbol: data.symbol,
-        stockName: data.name,
         price: data.hDailies[0].close.toFixed(2),
         changePer: ((diff / data.hDailies[1].close) * 100).toFixed(2),
         changeVol: diff.toFixed(2),
