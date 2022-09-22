@@ -52,6 +52,9 @@ const App = () => {
     <div className="App">
       <Bar />
       <Switch>
+        <Route exact path={"/login"}>
+          <Login setToken={setToken} />
+        </Route>
         <Route path={"/stock/:symbol"}>
           <Stock />
         </Route>

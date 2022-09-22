@@ -78,14 +78,7 @@ const Stocks = () => {
   }, []);
   return (
     <div className="stocks">
-      <div className="stocks-title"> Stocks en el mercado </div>
-      <div className="stocks-index">
-        <div className="stocks-subtitle">Índices </div>
-        <div className="stocks-subtitle">Divisas </div>
-        <div className="stocks-subtitle">Futuro </div>
-        <div className="stocks-subtitle">Cripto </div>
-        <div className="stocks-subtitle">Bonos </div>
-      </div>
+      <div className="stocks-title"> Stocks in the market </div>
       <div className="stocks-body-wrapper">
         <div className="stocks-body">
           {renderedStocks.map((el, index) => {

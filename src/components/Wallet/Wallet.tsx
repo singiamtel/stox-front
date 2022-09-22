@@ -74,7 +74,6 @@ const Wallet = () => {
       .catch(() => {
         removeToken();
         history.push("/login");
-        history.go(0);
       });
   }, [history]);
   return (
@@ -82,7 +81,7 @@ const Wallet = () => {
       <div>
         <div className="aux">
           <div className="stocks">
-            <div className="stocks-title"> Mi cartera </div>
+            <div className="stocks-title"> My wallet </div>
             <div className="stocks-index">
               {/*
 
@@ -94,8 +93,7 @@ const Wallet = () => {
           <div className="stocks-body">
             <div className="stocks-index">
               <div className="stocks-subtitle"> Stock </div>
-              <div className="stocks-subtitle"> Cantidad </div>
-              {/*<div className="stocks-subtitle"> Precio actual </div>*/}
+              <div className="stocks-subtitle"> Amount </div>
             </div>
             {renderedStocks.map((el, index) => {
               return <Stock key={index} stockInfo={el} />;

@@ -4,41 +4,41 @@ import "./linklist.css";
 const LinkList = () => {
   const links = [
     [
-      { text: "Webs relacionadas", href: "/" },
+      { text: "Related websites", href: "/" },
       { text: "Yahoo Finance", href: "https://finance.yahoo.com" },
-      { text: "Cómo funciona", href: "/" },
-      { text: "Condiciones de uso", href: "/" },
-      { text: "Exención de responsabilidad", href: "/" },
-      { text: "Política de privacidad", href: "/" },
-      { text: "Política de cookies", href: "/" }
+      { text: "How it works", href: "/" },
+      { text: "Terms of use", href: "/" },
+      { text: "Disclaimer", href: "/" },
+      { text: "Privacy policy", href: "/" },
+      { text: "Cookies policy", href: "/" },
     ],
     [
-      { text: "Mercados", href: "/" },
-      { text: "Índices", href: "/" },
-      { text: "Criptomonedas", href: "/"},
-      { text: "Divisas", href: "/"},
-      { text: "Materias primas", href: "/"}
+      { text: "Markets", href: "/" },
+      { text: "Index", href: "/" },
+      { text: "Crypto", href: "/" },
+      { text: "Forex", href: "/" },
+      { text: "Commodities", href: "/" },
     ],
 
     [
-      { text: "Comunidad", href: "/" },
-      { text: "Recomendar a un amigo", href: "/" },
+      { text: "Community", href: "/" },
+      { text: "Invite a friend", href: "/" },
       { text: "Ideas", href: "/" },
       { text: "Streams", href: "/" },
-      { text: "Normas internas", href: "/" }
+      { text: "Our rules", href: "/" },
     ],
 
     [
-      { text: "Para empresas", href: "/" },
+      { text: "For businesses", href: "/" },
+      { text: "Business inquiries", href: "/" },
       { text: "Widgets", href: "/" },
-      { text: "Solucionar broker y sitio web", href: "/" },
-      { text: "Soluciones relacionadas con los gráficos", href: "/" },
-      { text: "Biblioteca de gráficos ligeros", href: "/" },
-      { text: "Integración de corretaje", href: "/" },
-      { text: "Fuentes de contenido y RRSS", href: "/" }
-    ]
-  ]
-  return(
+      { text: "Contact us", href: "/" },
+      { text: "Graphics library", href: "/" },
+      { text: "Integration", href: "/" },
+      { text: "Content API and social networks", href: "/" },
+    ],
+  ];
+  return (
     <div className="linklist">
       <Links links={links[0]} />
       <Links links={links[1]} />
@@ -46,6 +46,6 @@ const LinkList = () => {
       <Links links={links[3]} />
     </div>
   );
-}
+};
 
 export default LinkList;

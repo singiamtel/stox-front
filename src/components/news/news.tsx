@@ -45,7 +45,7 @@ function News() {
         fetchedNews.push({
           image: data.news[i].imgsrc,
           title: data.news[i].title,
-          category: "Finanzas",
+          category: "Finance - ",
           timeSince: 5,
           source: "Financial Times",
           description: data.news[i].text,
@@ -58,7 +58,7 @@ function News() {
       return fetchedNews;
     }
     axios
-      .get(process.env.REACT_APP_API_URL + "/stock/AAPL")
+      .get(process.env.REACT_APP_API_URL + "/stock/NVDA")
       .then((result: any) => {
         setFetchedNews(dataToNews(result.data));
       });
@@ -66,13 +66,9 @@ function News() {
 
   return (
     <div className="news">
-      <div className="news_title">Noticias destacadas</div>
+      <div className="news_title">Top stories</div>
       <div className="news_subtitle">
-        <div className="news_subtitle_el news_current">Índices</div>
-        <div className="news_subtitle_el">Cripto</div>
-        <div className="news_subtitle_el">Divisas</div>
-        <div className="news_subtitle_el">Bonos</div>
-        <div className="news_subtitle_el">Materias primas</div>
+        <div className="news_subtitle_el news_current">Index</div>
       </div>
       <div className="group_42">
         <NewsElement info={fetchedNews[0]} />

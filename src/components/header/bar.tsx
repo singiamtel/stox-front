@@ -92,14 +92,26 @@ const Bar = () => {
   }
   if (getUsername()) {
     text = (
-      <div className="conectarse-text">
+      <div className="conectarse conectarse-text">
         {" "}
-        Bienvenido, {username.charAt(0).toUpperCase() + username.slice(1)}{" "}
+        Welcome, {username.charAt(0).toUpperCase() + username.slice(1)}{" "}
       </div>
     );
   } else {
     // Should never render as long as site is login protected
-    text = <div className="conectarse-text"> Conectarse </div>;
+    text = (
+      <div
+        className="conectarse conectarse-text"
+        style={{ cursor: "pointer" }}
+        onClick={(e) => {
+          e.preventDefault();
+          history.push("/login");
+        }}
+      >
+        {" "}
+        Connect{" "}
+      </div>
+    );
   }
   const [fetchedStocks, setFetchedStocks] = useState<StockInfo[]>([]);
   const featuredStocks = ["AAPL", "KR", "NVDA", "FCX", "LMT"];
@@ -183,7 +195,7 @@ const Bar = () => {
                 className={`nav-item ${path === "/" ? "nav-current" : ""}`}
                 to="/"
               >
-                Inicio
+                Home
               </NavLink>
             </div>
             <div className="nav-links-el">
@@ -191,7 +203,7 @@ const Bar = () => {
                 className={`nav-item ${path === "/news" ? "nav-current" : ""}`}
                 to="/news"
               >
-                Noticias
+                News
               </NavLink>
             </div>
             <div className="nav-links-el">
@@ -201,7 +213,12 @@ const Bar = () => {
                 }`}
                 to="/wallet"
               >
-                Mi cartera
+                My wallet
+              </NavLink>
+            </div>
+            <div className="nav-links-el">
+              <NavLink className={`nav-item`} to="/stock/random">
+                Try a random stock
               </NavLink>
             </div>
           </div>

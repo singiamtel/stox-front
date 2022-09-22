@@ -9,12 +9,7 @@ async function loginUser(credentials: any) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(credentials),
-  })
-    .then((data) => {
-      console.log(data);
-      return data;
-    })
-    .then((data) => data.json());
+  }).then((data) => data.json());
 }
 
 function setUsername(username: any) {
@@ -67,7 +62,7 @@ function Login({ setToken }: any) {
           registerRedirect(history);
         }}
       >
-        Registro
+        Register
       </div>
 
       <div className="login-logo">
@@ -110,7 +105,7 @@ function Login({ setToken }: any) {
         onSubmit={handleSubmit}
         acceptCharset="utf-8"
       >
-        <span className="login-prompt">Nombre de usuario</span>
+        <span className="login-prompt">Username</span>
         <input
           className="user-input login-input"
           type="text"
@@ -118,7 +113,7 @@ function Login({ setToken }: any) {
           id="user"
           onChange={(e: any) => setUserName(e.target.value)}
         />
-        <span className="login-prompt">Contraseña</span>
+        <span className="login-prompt">Password</span>
         <input
           className="pass-input login-input"
           type="password"
@@ -129,7 +124,7 @@ function Login({ setToken }: any) {
         <input
           className="submit-input"
           type="submit"
-          value="Aceptar"
+          value="Submit"
           id="submit"
         />
       </form>
