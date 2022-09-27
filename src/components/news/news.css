@@ -84,8 +84,6 @@
 }
 
 .news_image{
-	margin-left: 50%;
-	transform: translateX(-50%);
 	background: #89A2AE;
 	border-radius: 6px;
 	max-height:100%;

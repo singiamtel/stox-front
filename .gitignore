@@ -6,3 +6,4 @@ package-lock.json
 build/
 todo.md
 .env
+tags
