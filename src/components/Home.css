@@ -1,16 +1,22 @@
 .Home-body {
-	margin-top: 50px;
-	padding: 0% 11%;
+	margin-top: 3rem;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(100px, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(1fr, 800px));
+	grid-column-gap: 0px;
+	grid-row-gap: 0px; 
+	margin: 0 10%;
+	margin-bottom:100px;
 }
 
 .Home-bodyBot {
-	margin-top: 60px;
-	display: flex;
-	justify-content: space-between;
+	/* margin-top: 60px; */
+	/* display: flex; */
+	/* justify-content: space-between; */
 }
 
 
 .Home-bodyTop {
-	display: flex;
-	justify-content: space-between;
+	/* display: flex; */
+	/* justify-content: space-between; */
 }

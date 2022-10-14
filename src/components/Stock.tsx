@@ -26,7 +26,9 @@ function Stock() {
     <div className="Stock">
       <div className="Stock-body">
         <div className="Stock-bodyTop">
+		<div style={{width:"900px"}}>
           <Graph symbol={symbol} />
+		</div>
           <Buy />
         </div>
         <div className="Stock-bodyMid">

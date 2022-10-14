@@ -1,6 +1,7 @@
 .stocks {
 	display: flex;
 	flex-direction:column;
+	margin: 0 10%;
 }
 
 .aux{
@@ -49,7 +50,7 @@
 }
 
 .stock {
-	width: 464px;
+	/* width: 464px; */
 	display: flex;
 	align-items: center;
 	justify-content: space-between;

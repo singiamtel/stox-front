@@ -1,16 +1,10 @@
-
 .stocks-title {
-		/* Typeface/Headline Three/Regular */
 	font-family: Noto Sans, sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 32px;
 	line-height: 48px;
 	margin-left: 12px;
-	
-	/* identical to box height, or 150% */
-	
-	/* Dark grey */
 	color: #2D3B41;
 }
 
@@ -29,7 +23,7 @@ div .stocks-index .stocks-subtitle {
 }
 
 div .stock {
-	width: 464px;
+	/* width: 464px; */
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -37,7 +31,7 @@ div .stock {
 }
 
 .stock-left {
-	width: 40%
+	/* width: 40% */
 }
 
 .stock-stockSymbol {
@@ -69,28 +63,21 @@ div .stock {
 	line-height: 16px;
 	text-transform: uppercase;
 	text-align: right;
-	width: 30%;
-	
-	/* Dark grey */
+	/* width: 30%; */
 	color: #2D3B41;
 }
 
 .stock-right {
-	width: 30%;
+	/* width: 30%; */
 }
 
 div .stock-stockChange {
-	/* Typeface/Caption Three/Regular */
 	font-family: Noto Sans, sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 12px;
 	line-height: 20px;
-	
-	/* identical to box height, or 167% */
 	text-align: right;
-	
-	/* Green up */
 	color: #00C7B7;
 }
 
@@ -102,4 +89,16 @@ div .stocks-body {
 div .stocks-body .stock {
 	background: #F5F5F5;
 	filter: drop-shadow(0px 2px 6px rgba(0,0,0,0.12));
+}
+
+.stocks-body .stock:nth-child(even) {
+	background: #FFFFFF;
+}
+
+.stocks-body .stock:first-child {
+	border-radius: 15px 15px 0px 0px;
+}
+
+.stocks-body .stock:last-child {
+	border-radius: 0px 0px 15px 15px;
 }

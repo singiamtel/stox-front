@@ -25,7 +25,7 @@ function getToken() {
 
 const Stock = ({ stockInfo }: { stockInfo: WalletInfo }) => {
   return (
-    <div className="stock">
+    <div className="stock" style={{width:"400px"}}>
       <div className="stock-left">
         <div className="stock-stockSymbol">{stockInfo.stockSymbol}</div>
       </div>
@@ -45,6 +45,8 @@ const Wallet = () => {
     function dataToStocks(data: any) {
       const fetchedStocks: any = [];
       for (let i in data) {
+		// Just in case, API shouldn't return id anyways
+	  	if(i === "_id") continue;
         fetchedStocks.push({
           stockSymbol: i,
           amount: data[i],
@@ -90,15 +92,18 @@ const Wallet = () => {
             </div>
           </div>
 
-          <div className="stocks-body">
+			<div>
             <div className="stocks-index">
               <div className="stocks-subtitle"> Stock </div>
               <div className="stocks-subtitle"> Amount </div>
             </div>
+          <div className="stocks-body">
             {renderedStocks.map((el, index) => {
               return <Stock key={index} stockInfo={el} />;
             })}
           </div>
+            </div>
+
         </div>
       </div>
     </div>

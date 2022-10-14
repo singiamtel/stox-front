@@ -53,7 +53,7 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	width: 308px;
+	/* width: 308px; */
 	height: 32px;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .featured-item-value{
-	width: 44px;
+	/* width: 44px; */
 	height: 24px;
 	font-family: Noto Sans, sans-serif;
 	font-style: normal;
@@ -92,7 +92,7 @@
 }
 
 .featured-item-daily{
-	width: 36px;
+	/* width: 36px; */
 	height: 24px;
 	font-family: Noto Sans, sans-serif;
 	font-style: normal;
@@ -109,7 +109,7 @@
 }
 
 .featured-item-percent{
-	width: 48px;
+	/* width: 48px; */
 	height: 24px;
 	font-family: Noto Sans, sans-serif;
 	font-style: normal;
@@ -125,7 +125,7 @@
 
 .featured-item-icon{
 	position: static;
-	width: 24px;
+	/* width: 24px; */
 	height: 24px;
 	right: -24px;
 	top: 24px;
